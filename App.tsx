@@ -1,8 +1,8 @@
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import AnimationsScreen from "./src";
-import PanGesture from "./src/PanGesture";
-import Transitions from "./src/Transitions";
+import PanGesture from "./src/animations/PanGesture";
+import Transitions from "./src/animations/Transitions";
 
 export type StackNavigator = {
   Home: undefined;

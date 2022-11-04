@@ -7,7 +7,7 @@ import Animated, {
   withDecay,
 } from "react-native-reanimated";
 import { clamp } from "react-native-redash";
-import Card from "./Card";
+import { Card, Cards } from "../../components/Card";
 
 export default function PanGesture() {
   const { width, height } = Dimensions.get("screen");
@@ -54,7 +54,7 @@ export default function PanGesture() {
     <View style={styles.container}>
       <PanGestureHandler {...{ onGestureEvent }}>
         <Animated.View {...{ style }}>
-          <Card color={"#dedeff"} />
+          <Card card={Cards.Card1} />
         </Animated.View>
       </PanGestureHandler>
     </View>
