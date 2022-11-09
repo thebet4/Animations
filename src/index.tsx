@@ -26,6 +26,13 @@ export default function AnimationsScreen({
       >
         <Text>Transition</Text>
       </TouchableOpacity>
+
+      <TouchableOpacity
+        onPress={() => navigation.navigate("AutoScroll")}
+        style={styles.Button}
+      >
+        <Text>AutoScroll</Text>
+      </TouchableOpacity>
     </View>
   );
 }
